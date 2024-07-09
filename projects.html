@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - DAVID TAN</title>
+
+    <link rel="icon" href="/images/project_icon.png" type="image/png">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html" class="profile" id="profile-link">DAVID TAN</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html#basic-information">Basic Information</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="projects" class="project-section">
+                <h2>Projects</h2>
+
+                <div class="project">
+                    <div class="project-img-container">
+                        <div class="arrow-left" onclick="changeImage('project1', -1)">&#10094;</div>
+                        <img src="images/project1_1.png" alt="Project 1" class="project-img" id="project1-img">
+                        <div class="arrow-right" onclick="changeImage('project1', 1)">&#10095;</div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Old Age Home Mobile Application [Elderly Care App]</h3>
+                        <p>
+                            - Dedicated platform designed to cater to the unique needs of elderly living and providing
+                            easy ways for staff and caregivers to take care of the elderly.<br>
+                            - Facilitating a streamlined process for staff and caregivers to document medical records
+                            obtained from elderly individuals.<br>
+                            - Developed a pill reminder system to prompt elderly individuals to take their medication,
+                            alongside incorporating chat and messaging features to facilitate connections and foster new
+                            friendships.<br>
+                            - Delivering live remote monitoring capabilities to enable users to oversee the well-being
+                            of their elderly parents in real-time.<br>
+                            - Presenting a line graph depicting the historical health records of elderly individuals,
+                            followed by the calculation and display of their overall health percentage through a pie
+                            chart.<br>
+                            - Incorporating an emergency help function that allows elderly individuals to send alert
+                            messages and make emergency calls when needed.<br>
+                            - Utilizing Firebase for database storage and ZEGOCLOUD for remote monitoring management,
+                            particularly for live streaming functionalities.<br>
+                            - Technologies used: Android Studio, Java, Firebase, ZEGOCLOUD, Google Maps API
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-img-container">
+                        <div class="arrow-left" onclick="changeImage('project2', -1)">&#10094;</div>
+                        <img src="images/project2_1.png" alt="Project 2" class="project-img" id="project2-img">
+                        <div class="arrow-right" onclick="changeImage('project2', 1)">&#10095;</div>
+                    </div>
+                    <div class="project-description">
+                        <h3>Fitness Mobile Application</h3>
+                        <p>
+                            Platform for assisting bodybuilders to record their daily exercise routine and enable
+                            communication with other users in the community.<br>
+                            - <Strong>Workout Tracking:</Strong> Allows users to log their workout routines, including
+                            sets, reps, and weights used for each exercise.<br>
+                            - <strong>Exercise Library:</strong> Provides a comprehensive list of exercises to help
+                            users record their exercies more efficiently.<br>
+                            - <strong>Weight Tracking:</strong> Enables users to track their body weight over time,
+                            providing graphs to visualize progress.<br>
+                            - <strong>Measurement Tracking:</strong> Users can log their body measurements (e.g., chest,
+                            waist, hips) to monitor changes in their physique.<br>
+                            - <strong>Functions:</strong> Facilitates interaction with other users through posting their
+                            daily/weekly/monthly exercise routine.<br>
+                            - <strong>Goal Setting:</strong> Allows users to set fitness goals and provides reminders
+                            and motivational notifications to help achieve them.<br>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <div class="project-img-container">
+                        <div class="arrow-left" onclick="changeImage('project3', -1)">&#10094;</div>
+                        <img src="images/project3_1.png" alt="Project 3" class="project-img-horizontal"
+                            id="project3-img">
+                        <div class="arrow-right" onclick="changeImage('project3', 1)">&#10095;</div>
+                    </div>
+                    <div class="project-description">
+                        <h3>PHP Login & Sign Up Module</h3>
+                        <p>
+                            This web module is designed to provide a secure and efficient login and sign-up system for
+                            users using HTML, CSS, PHP, XAMPP, and phpMyAdmin. The key features of this module include:
+                            <br><br>
+                            - <strong>User Registration:</strong> Allows new users to create an account by providing
+                            necessary information such as username, email, and password. The system performs validations
+                            to ensure data integrity and security.
+                            <br><br>
+                            - <strong>User Login:</strong> Enables registered users to log in to the system using their
+                            credentials. The login process includes error handling for incorrect usernames or passwords.
+                            <br><br>
+                            - <strong>Password Recovery:</strong> If a user forgets their password, they can request a
+                            password reset. The system sends an email verification link to the user's registered email
+                            address. Upon verification, users can reset their passwords securely.
+                            <br><br>
+                            - <strong>Database Management:</strong> Uses phpMyAdmin in conjunction with XAMPP to manage
+                            the database. The database stores user information securely, including hashed passwords for
+                            added security.
+                            <br><br>
+                            - <strong>Technologies Used</strong>: HTML, CSS, PHP, XAMPP, phpMyAdmin
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
