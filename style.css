@@ -106,20 +106,15 @@ p {
     from {
         opacity: 0;
         transform: translateY(50px);
-        /* Start slightly below and move up */
-
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
-        /* Reach normal position */
     }
 }
 
 .animated-section {
     animation: fadeInBottomToTop 1.5s ease-in-out;
-    /* Apply the animation */
 }
 
 .profile {
@@ -132,12 +127,50 @@ p {
     color: #ffcc00;
 }
 
-
 /* Mobile Responsive */
 @media only screen and (max-width: 600px) {
-    .background {
-        background-size: cover;
-        height: 50vh;
+    body {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+/* Tablet Responsive */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    section {
+        width: 80%;
+        margin: 10px 0;
     }
 }
 
@@ -213,4 +246,3 @@ p {
 .confetti:nth-child(even) {
     background-color: #1e90ff; 
 }
-
